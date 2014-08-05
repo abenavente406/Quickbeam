@@ -26,5 +26,15 @@ namespace Quickbeam.Views
 		{
 			return true;
 		}
+
+	    private void BtnBrowseHaloExe_Click(object sender, RoutedEventArgs e)
+	    {
+	        throw new System.NotImplementedException();
+	    }
+
+	    private void BtnLaunchHalo_Click(object sender, RoutedEventArgs e)
+	    {
+	        throw new System.NotImplementedException();
+	    }
 	}
 }
