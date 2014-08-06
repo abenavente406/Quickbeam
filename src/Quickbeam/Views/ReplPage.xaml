@@ -6,7 +6,7 @@
 			xmlns:ironPythonConsole="clr-namespace:Quickbeam.IronPythonConsole;assembly=Quickbeam.IronPythonConsole"
 			mc:Ignorable="d"
 			Background="#2d2d30"
-			d:DesignWidth="1200" d:DesignHeight="600">
+			d:DesignWidth="1130" d:DesignHeight="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="640" MinWidth="30" Name="LeftColumn" />
@@ -86,7 +86,7 @@
 
             <Button Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="9"
                     Height="30" HorizontalAlignment="Stretch"
-                    Click="BtnLaunchHalo_Click" Content="Dock Halo"/>
+                    Click="BtnLaunchHalo_Click" Content="Launch Halo"/>
         </Grid>
 
         <GridSplitter ResizeDirection="Columns" Width="2"

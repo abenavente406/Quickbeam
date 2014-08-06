@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
         xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
-        xmlns:pg="http://schemas.denisvuyka.wordpress.com/wpfpropertygrid"
         xmlns:console="clr-namespace:Quickbeam.PythonConsoleControl;assembly=Quickbeam.PythonConsoleControl"
         mc:Ignorable="d" 
         d:DesignHeight="500" d:DesignWidth="800">
@@ -63,7 +62,7 @@
             <avalonEdit:TextEditor DockPanel.Dock="Bottom"
 			    Name="textEditor" Foreground="#c5c8c6" Background="#212121"
 			    FontFamily="Consolas" FontSize="9pt"
-                Text="# QuickPad: Write code snippets here and press F5 to run. If code is selected, only selection is run.&#10;" />
+                Text="# QuickPad:&#x0a;# - Write code or paste snippets, then press F5 to run.&#x0a;# - If code is selected, only the selection is run.&#x0a;" />
         </DockPanel>
     </Grid>
 </UserControl>

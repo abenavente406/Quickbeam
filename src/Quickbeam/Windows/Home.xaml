@@ -8,6 +8,7 @@
 		xmlns:viewModels="clr-namespace:Quickbeam.ViewModels"
 		mc:Ignorable="d"
 		UseLayoutRounding="False"
+        Width="1130" Height="600"
         MinWidth="380" MinHeight="84"
 		d:DesignHeight="425" d:DesignWidth="720" WindowStartupLocation="CenterScreen">
     <WindowChrome.WindowChrome>

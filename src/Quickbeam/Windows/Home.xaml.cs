@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Windows;
-using Quickbeam.Dialogs;
-using Quickbeam.Native;
 using Quickbeam.Views;
 using Quickbeam.ViewModels;
 
@@ -44,26 +40,6 @@ namespace Quickbeam.Windows
 			OnStateChanged(null);
 
 			base.OnSourceInitialized(e);
-		}
-
-		private void OpenCacheMenuItem_OnClick(object sender, RoutedEventArgs e)
-		{
-			ViewModel.ValidateFile(ViewModel.FindFile(HomeViewModel.Type.BlamCache));
-		}
-
-		private void OpenMapImageMenuItem_OnClick(object sender, RoutedEventArgs e)
-		{
-			ViewModel.ValidateFile(ViewModel.FindFile(HomeViewModel.Type.MapImage));
-		}
-
-		private void OpenMapInfoMenuItem_OnClick(object sender, RoutedEventArgs e)
-		{
-			ViewModel.ValidateFile(ViewModel.FindFile(HomeViewModel.Type.MapInfo));
-		}
-
-		private void OpenCampaignMenuItem_OnClick(object sender, RoutedEventArgs e)
-		{
-			ViewModel.ValidateFile(ViewModel.FindFile(HomeViewModel.Type.Campaign));
 		}
 	}
 }
