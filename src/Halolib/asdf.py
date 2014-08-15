@@ -26,10 +26,10 @@ import os
 import sys
 src_dir = os.path.dirname(__file__)
 stdlib_location = os.path.abspath(src_dir + r"..\MetroIde\Lib")
-dlls_location = os.path.abspath(src_dir + r"..\bin\Debug")
+dlls_location = os.path.abspath(src_dir + r"..\..\bin\Debug")
 halolib_location = os.path.abspath(src_dir)
 sys.path.append(stdlib_location)
-sys.path.append(r"C:\Dropbox\Workbench\CodeProjects\HaloFiles\Source Code\Quickbeam\src\bin\Debug")
+sys.path.append(dlls_location)
 sys.path.append(halolib_location)
 
 import clr

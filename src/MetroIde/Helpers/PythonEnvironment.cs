@@ -2,14 +2,25 @@
 using Microsoft.Scripting;
 using Microsoft.Scripting.Hosting;
 using Quickbeam.Low.ByteArray;
+using System.IO;
 
 namespace MetroIde.Helpers
 {
     public class PythonEnvironment
     {
-        protected static readonly string StdlibLocation = @"C:\Dropbox\Workbench\CodeProjects\HaloFiles\Source Code\Quickbeam\vendor\PythonStdLib";
-        protected static readonly string DllsLocation = @"C:\Dropbox\Workbench\CodeProjects\HaloFiles\Source Code\Quickbeam\src\bin\Debug";
-        protected static readonly string HalolibLocation = @"C:\Dropbox\Workbench\CodeProjects\HaloFiles\Source Code\Quickbeam\src\halolib";
+        protected static readonly string ProjectPath = Path.GetDirectoryName(
+            Path.GetDirectoryName(
+                Path.GetDirectoryName(
+                    Path.GetDirectoryName(
+                        System.IO.Directory.GetCurrentDirectory()
+                    )
+                )
+            )
+        );
+
+        protected static readonly string StdlibLocation = ProjectPath + @"\vendor\PythonStdLib";
+        protected static readonly string DllsLocation = ProjectPath + @"\src\bin\Debug";
+        protected static readonly string HalolibLocation = ProjectPath + @"\src\halolib";
 
         protected ScriptEngine Engine;
         protected ScriptScope Scope;
